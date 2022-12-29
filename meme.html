@@ -1,0 +1,59 @@
+<html>
+<head>
+  <style>
+    /* Style the images */
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.5s;
+    }
+    /* Grey out the images when they are clicked */
+    img.grey {
+      filter: grayscale(100%);
+      transform: scale(0.9);
+    }
+    div.center {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 150px; 
+  padding-bottom: auto;
+}
+
+  </style>
+</head>
+<body>
+    <div class="center">
+        <!-- Display the images -->
+  <img src="dip.jfif" onclick="greyOut(this)">
+  <img src="taheri.jpg" onclick="greyOut(this)">
+  <img src="anonto.jpg" onclick="greyOut(this)">
+
+    <img src="meyeta.JPG" onclick="greyOut(this)">
+    <img src="song (2).jpg" onclick="greyOut(this)">
+
+    <img src="hamarra.jfif" onclick="greyOut(this)">
+    <img src="alo.jpg" onclick="greyOut(this)">
+  <img src="bou.jfif" onclick="greyOut(this)">
+
+    <img src="sumon.jfif" onclick="greyOut(this)">
+  
+  
+
+    </div>
+  
+  <script>
+    function greyOut(image) {
+      // If the image is already grey, revert it back to normal
+      if (image.classList.contains("grey")) {
+        image.classList.remove("grey");
+      }
+      // Otherwise, grey out the image
+      else {
+        image.classList.add("grey");
+      }
+    }
+  </script>
+</body>
+</html>
